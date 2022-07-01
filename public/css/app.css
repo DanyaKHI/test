@@ -1,0 +1,350 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  height: 100vh;
+}
+body q {
+  quotes: "«" "»";
+}
+body ::-webkit-scrollbar {
+  width: 6px;
+}
+body ::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background-color: rgb(236, 236, 236);
+}
+body ::-webkit-scrollbar-thumb {
+  background: rgb(217, 217, 217);
+  border-radius: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+}
+.main .menu {
+  background-color: #4B4B4B;
+  color: rgba(255, 255, 255, 0.8);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main .menu .lheader {
+  flex: 1;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main .menu .lheader span {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.main .menu .lcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 10.5;
+}
+.main .menu .lcontent .list .menu_catalog {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.main .menu .lcontent .list .menu_catalog .main_drop {
+  display: flex;
+  flex-direction: row;
+}
+.main .menu .lcontent .list .menu_catalog img {
+  margin-left: auto;
+  padding-right: 24px;
+}
+.main .menu .lcontent .list .menu_catalog div {
+  padding: 10px 0 10px 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main .menu .lcontent .list .menu_catalog .drop {
+  font-size: 18px;
+}
+.main .menu .lcontent .list .menu_catalog .drop:last-of-type {
+  border: none;
+}
+.main .menu .lcontent .list > div {
+  padding: 10px 0 10px 50px;
+  overflow: hidden;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main .menu .lcontent .footer {
+  font-size: 16px;
+}
+.main .menu .lcontent .footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 19px;
+}
+.main .menu .lcontent .footer > div {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 0 10px 50px;
+}
+.main .rcontent {
+  background-color: #E5E5E5;
+  flex: 4.3;
+  display: flex;
+  flex-direction: column;
+}
+.main .rcontent .rheader {
+  color: rgb(33, 33, 33);
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  flex: 1;
+  font-weight: 700;
+}
+.main .rcontent .rheader .right_header * {
+  margin: 0 7px;
+}
+.main .rcontent .rheader .left_header * {
+  margin: 0 4px;
+}
+.main .rcontent .rheader .left_header {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .rcontent .rheader .right_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.main .rcontent .rheader .right_header a {
+  color: rgb(33, 33, 33);
+}
+.main .rcontent .rheader .right_header .exit {
+  display: inline-flex;
+  flex-direction: column;
+}
+.main .rcontent .rheader .right_header .exit .exit_word {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+.main .rcontent .catalog {
+  overflow: hidden;
+  flex: 10.5;
+  display: flex;
+  flex-direction: column;
+}
+.main .rcontent .catalog .tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 30px 20px 30px;
+}
+.main .rcontent .catalog .tools .search input {
+  position: relative;
+  padding: 8px 1px 8px 30px;
+  border: 1px solid #808080;
+}
+.main .rcontent .catalog .tools .search img {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 7px;
+  z-index: 1;
+}
+.main .rcontent .catalog .tools .search input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: url(https://dummyimage.com/20x20/ffffff/7b00ff.png&text=X);
+}
+.main .rcontent .catalog .tools .tools_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main .rcontent .catalog .tools .tools_button .add {
+  border: none;
+  background-color: rgba(75, 75, 75, 0.65);
+  color: rgb(255, 255, 255);
+  padding: 8px 40px;
+  margin: 1px 10px 1px 1px;
+}
+.main .rcontent .catalog .tools .tools_button .draft {
+  border: none;
+  background-color: #E5E5E5;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1px;
+}
+.main .rcontent .catalog .tools .tools_button .draft img {
+  margin-right: 10px;
+  align-self: start;
+}
+.main .rcontent .catalog .tools .tools_button .draft:hover {
+  border: 0.1px solid rgb(33, 33, 33);
+  margin: 0;
+}
+.main .rcontent .catalog .categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 20px;
+  flex-wrap: wrap;
+}
+.main .rcontent .catalog .categories div:first-of-type {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgb(33, 33, 33);
+}
+.main .rcontent .catalog .categories div {
+  margin: 10px 0 10px 10px;
+}
+.main .rcontent .catalog .categories input {
+  border: 1px solid #808080;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 8px 10px;
+}
+.main .rcontent .catalog .categories input:hover {
+  background-color: rgb(89, 187, 241);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(89, 187, 241);
+}
+.main .rcontent .catalog .products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  overflow: auto;
+  margin: 10px 20px;
+}
+.main .rcontent .catalog .products .product {
+  background: rgb(255, 255, 255);
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 180px;
+  flex-basis: 48%;
+}
+.main .rcontent .catalog .products .product .photo {
+  flex: 1.3;
+  padding: 20px 0;
+  margin: 0 10px;
+}
+.main .rcontent .catalog .products .product .photo img {
+  height: 90%;
+}
+.main .rcontent .catalog .products .product .info {
+  flex: 2.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0 10px;
+}
+.main .rcontent .catalog .products .product .info .name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  overflow: hidden;
+}
+.main .rcontent .catalog .products .product .info .old_price {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: rgba(51, 51, 51, 0.5);
+}
+.main .rcontent .catalog .products .product .info .price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+.main .rcontent .catalog .products .product .info .red {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-left: auto;
+}
+.main .rcontent .catalog .products .product .info .red button {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(51, 51, 51, 0.5);
+  border: none;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+}
+.main .rcontent .catalog .products .product .info .red button img {
+  margin-right: 8px;
+}
+.main .rcontent .catalog .products .product .more_info {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 20px 0;
+  margin: 0 10px;
+}
+.main .rcontent .catalog .products .product .more_info .status {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main .rcontent .catalog .products .product .more_info .status img {
+  margin-right: 10px;
+  align-self: start;
+}
+.main .rcontent .catalog .products .product .more_info .code {
+  margin-right: auto;
+  color: rgba(51, 51, 51, 0.5);
+}
+.main .rcontent .catalog .products .product .more_info .trash {
+  margin-left: auto;
+}
+.main .rcontent .catalog .products .product .more_info .trash button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(51, 51, 51, 0.5);
+}
+.main .rcontent .catalog .products .product .more_info .trash button img {
+  margin-right: 10px;
+}
+.main .rcontent .catalog .f {
+  height: 30px;
+}
